@@ -1,5 +1,5 @@
 # traefik-ingress
-## 环境准备
+
 ### 创建自定义域名证书并以secret方式存储在K8S中供pod使用
 - kubectl create secret generic traefik-cert --from-file=/etc/kubernetes/ssl/test.zhangling.link.cer --from-file=/etc/kubernetes/ssl/test.zhangling.link.key 
 - 注意: 创建secret前，需要自己准备好证书文件，如果有多个域名证书，可以在上述命令行增加--from-file=
